@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 70%;
+    margin: auto;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    padding-right: 0.5rem;
+}
+
+header h1 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.form {
+    background-image: url("images/iuean.png");
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 90%;
+    margin: 0 auto 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.form h3 {
+    font-size: 35px;
+    width: 80%;
+    margin: 0 auto 1rem;
+}
+
+.form-button {
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    margin: 0.5rem auto;
+    width: 80%;
+    cursor: pointer;
+}
+
+.form-button:focus {
+    background-color: rgb(24, 24, 24);
+    transition: 0.3s;
+}
+
+.form-button div {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.abc {
+    background-color: black;
+    padding: 4px 8px;
+    border: 1px solid white;
+    margin: 5px 10px 5px 5px;
+    border-radius: 0.25rem;
+}
+
+.answer {
+    font-size: 20px;
+}
+
+.question2 {
+    display: none;
+}
+
+.question3 {
+    display: none;
+}
+
+.question4 {
+    display: none;
+}
+
+.question6 input,
+.question4 input{
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    border-bottom: 1px solid grey;
+}
+
+.question6 input:focus,
+.question4 input:focus {
+    transition: 0.3s;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    outline: none;
+}
+
+.question5 {
+    display: none;
+}
+
+.question6 {
+    display: none;
+    flex-direction: column;
+}
+
+.question6 label {
+    text-align: left;
+    font-size: 15px;
+}
+
+.question7 {
+    display: none;
+    flex-direction: column;
+}
+
+.question7 h2 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.submit {
+    padding: 5px 0;
+}
+
+.submit-btn {
+    padding: 5px 0;
+    margin: 1rem;
+}
+
+.main {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.testimonial {
+    width: 90%;
+    margin: 2.5rem auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    color: rgb(0, 0, 0);
+    background-color:aliceblue;
+    position: relative;
+    box-shadow: 0px 0px 15px 0px rgba(172, 172, 172, 0.75);
+}
+
+.testimonial h2 {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0.5rem 1rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    color: rgb(0, 0, 0);
+    transform:translateY(-300px)
+}
+
+.test2 h2 {
+    transform:translateY(-280px)
+}
+
+.test3 h2 {
+    transform:translateY(-360px)
+}
+
+.testimonial p {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 4rem 0 0;
+    font-style: italic;
+}
+
+.test2 p {
+    padding: 3rem 0 0;
+}
+
+.testimonial p,
+.testimonial img {
+    width: 90%;
+    margin: 0.5rem auto 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.testimonial img {
+    border: 2px solid black;
+}
+
+.main button {
+    text-align: center;
+    background-color: rgb(0, 102, 255);
+    padding: 0.5rem 1rem;
+    width: 90%;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+    border: 2px solid black;
+    box-shadow: 0px 0px 15px 0px rgba(172, 172, 172, 0.75);
+    cursor: pointer;
+}
+
+.main button div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main button div svg {
+    font-size: 30px;
+    padding-right: 5px;
+}
