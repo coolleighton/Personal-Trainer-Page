@@ -1,3 +1,5 @@
+/* General */
+
 * {
     margin: 0;
 
@@ -12,6 +14,8 @@ body {
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+
+/* Header */
 
 header {
     display: flex;
@@ -32,11 +36,13 @@ header h1 {
     text-align: left;
 }
 
+/* Data collection form */
+
 .form {
     background-image: url("images/iuean.png");
     background-position: center;
     background-size: cover;
-    height: 70vh;
+    height: 600px;
     width: 90%;
     margin: 0 auto 1rem;
     border-radius: 1rem;
@@ -142,8 +148,10 @@ input[type=submit] {
  
 }
 
+/* main area */
+
 .main {
-    margin-top: 5rem;
+    margin-top: 8rem;
     text-align: center;
 }
 
@@ -231,10 +239,42 @@ input[type=submit] {
     padding-right: 5px;
 }
 
+/* footer */ 
+
 footer {
     text-align: center;
     color: black;
     background-color: white;
     padding: 10px 5px;
     font-size: 15px;
+}
+
+/* media queries */
+
+@media (max-width: 380px) {
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .form h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    header img {
+        width: 50px;
+        height: 50px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
 }
