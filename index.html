@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/small logo.png">
     <link rel="stylesheet" href="mystyles.css">
     <title>Ieuan Lewis Coaching</title>
 </head>
@@ -18,109 +19,105 @@
     </header>
 
     <section class="form">
-        <div class="question1" id="question1">
-            <h3>HOW CAN WE HELP YOU?</h3>
-            <button id="q1" class="form-button">
-                <div>
-                    <p class="abc">A</p>
-                    <p class="answer">BUILD MUSCLE</p>
-                </div>
-            </button>
-            <button id="q1" class="form-button">
-                <div>
-                    <p class="abc">B</p>
-                    <p class="answer">LOSE WEIGHT</p>
-                </div>
-            </button>
-            <button id="q1" class="form-button">
-                <div>
-                    <p class="abc">C</p>
-                    <p class="answer">HEALTHY LIFESTYLE</p>
-                </div>
-            </button>
+        <div id="question1Div" class="form-div">
+            <h3>How Can We Help You?</h3>
+            <form id="question1">
+                <label>
+                    <input type="radio" name="question1" value="Build Muscle" id="q1a1"/>
+                    Build Muscle</label>
+                <label>
+                    <input type="radio" name="question1" value="Lose Weight" id="q1a2"/>
+                    Lose Weight</label>
+                <label>
+                    <input type="radio" name="question1" value="Healthy Lifestyle" id="q1a3"/>
+                    Healthy Lifestyle</label>
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
-        <div class="question2" id="question2">
+        <div id="question2Div" class="form-div">
             <h3>Age?</h3>
-            <button id="q2" class="form-button">
-                <div>
-                    <p class="abc">A</p>
-                    <p class="answer">18-24</p>
-                </div>
-            </button>
-            <button id="q2" class="form-button">
-                <div>
-                    <p class="abc">B</p>
-                    <p class="answer">25-34</p>
-                </div>
-            </button>
-            <button id="q2" class="form-button">
-                <div>
-                    <p class="abc">C</p>
-                    <p class="answer">35 and over</p>
-                </div>
-            </button>
+            <form id="question2">
+                <label>
+                    18-24
+                    <input type="radio" name="question2" value="18-24" id="q2a1"/>
+                </label>
+                <label>
+                    25-35
+                    <input type="radio" name="question2" value="24-35" id="q2a2"/>
+                </label>
+                <label>
+                    Over 35
+                    <input type="radio" name="question2" value="Over 35" id="q2a3">
+                </label>
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
-        <div class="question3" id="question3">
-            <h3>How do you identify?</h3>
-            <button id="q3" class="form-button">
-                <div>
-                    <p class="abc">A</p>
-                    <p class="answer">Male</p>
-                </div>
-            </button>
-            <button id="q3" class="form-button">
-                <div>
-                    <p class="abc">B</p>
-                    <p class="answer">Female</p>
-                </div>
-            </button>
+        <div id="question3Div" class="form-div">
+            <h3>How Do You Identify?</h3>
+            <form id="question3">
+                <label>
+                    Male
+                    <input type="radio" name="question3" value="Male" id="q3a1"/>
+                </label>
+                <label>
+                    Female
+                    <input type="radio" name="question3" value="Female" id="q3a2"/>
+                </label>
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
-        <div class="question4" id="question4">
-            <h3>Why do you want to work with me?</h3>
-            <input placeholder="Type your answer here..." type="text">
-            <button id="q4" class="form-button submit-btn">
-                    <p class="answer submit">Submit</p>
-            </button>
+        <div id="question4Div" class="form-div">
+            <h3>Why Do You Want To Work With Me?</h3>
+            <form id="question4">
+                <input placeholder="Type your answer here..." type="text" id="q4a1">
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
-        <div class="question5" id="question5">
-            <h3>Are you ready to financially commit to your journey with me?</h3>
-            <button id="q5" class="form-button">
-                <div>
-                    <p class="abc">A</p>
-                    <p class="answer">Yes</p>
-                </div>
-            </button>
-            <button id="q5" class="form-button">
-                <div>
-                    <p class="abc">B</p>
-                    <p class="answer">No</p>
-                </div>
-            </button>
+        <div id="question5Div" class="form-div">
+            <h3>Are You Ready To Financially Commit To Your Journey With Me?</h3>
+            <form id="question5">
+                <label>
+                    Yes
+                    <input type="radio" name="question5" value="Yes" id="q5a1"/>
+                </label>
+                <label>
+                    No
+                    <input type="radio" name="question5" value="No" id="q5a2"/>
+                </label>
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
-        <div class="question6" id="question6">
+        <div id="question6Div" class="form-div">
             <h3>Contact Details</h3>
-            <label>First name*</label><br>
-            <input placeholder="Jane" type="text"><br>
-            <label>Second name*</label><br>
-            <input placeholder="Hill" type="text"><br>
-            <label>Phone number*</label><br>
-            <input placeholder="07123 456789" type="tel"><br>
-            <label>E-mail address*</label><br>
-            <input placeholder="name@example.com" type="email">
-            <button id="q4" class="form-button submit-btn">
-                <p class="answer submit">Submit</p>
-            </button>
+            <form id="question6">
+                <label>First name*</label><br>
+                <input required placeholder="Jane" type="text" id="q6a1"><br>
+                <label>Second name*</label><br>
+                <input required placeholder="Hill" type="text" id="q6a2"><br>
+                <label>Phone number*</label><br>
+                <input required placeholder="07123 456789" type="number" maxlength="11" minlength="11" id="q6a3"><br>
+                <label>E-mail address*</label><br>
+                <input required placeholder="name@example.com" type="email" id="q6a4">
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
-        <div class="question7" id="question7">
+        <div id="thankyou-message" class="form-div">
             <h3>Thank you!</h3>
-            <h2>your application has been received. You will be contacted shortly.</h2>
+            <p>your application has been received. You will be contacted shortly.</p>
         </div>
+
+        <button class="refresh-btn" id="refresh-btn">
+            <div>
+                <p>Refresh</p>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 8a4.5 4.5 0 0 1-8.61 1.834l-1.391.565A6.001 6.001 0 0 0 14.25 8 6 6 0 0 0 3.5 4.334V2.5H2v4l.75.75h3.5v-1.5H4.352A4.5 4.5 0 0 1 12.75 8z"></path></svg>
+            </div>
+        </button>
     </section>
 
     <section class="main">
@@ -158,6 +155,17 @@
             </div>
         </button>
     </section>
+
+    <footer>
+        <p>Copyright @ 2023 - Ieuan Lewis Coaching. All rights reserved.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('3zpotfLsoHw3eUL6n');
+        })();
+    </script>
     <script src="app.js"></script>
 </body>
 </html>
