@@ -22,7 +22,7 @@ header {
     align-items: center;
     padding: 1rem;
     width: 70%;
-    margin: auto;
+    margin: 0 auto 1rem;
 }
 
 header img {
@@ -151,7 +151,7 @@ input[type=submit] {
 /* main area */
 
 .main {
-    margin-top: 8rem;
+    margin-top: 7rem;
     text-align: center;
 }
 
@@ -180,7 +180,7 @@ input[type=submit] {
     background-color: rgb(255, 255, 255);
     position: absolute;
     color: rgb(0, 0, 0);
-    transform:translateY(-300px)
+    transform:translateY(-310px)
 }
 
 .test2 h2 {
@@ -188,7 +188,7 @@ input[type=submit] {
 }
 
 .test3 h2 {
-    transform:translateY(-360px)
+    transform:translateY(-370px)
 }
 
 .testimonial p {
