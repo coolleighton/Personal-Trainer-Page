@@ -22,7 +22,7 @@ header {
     align-items: center;
     padding: 1rem;
     width: 70%;
-    margin: 0 auto 1rem;
+    margin: 1rem auto;
 }
 
 header img {
@@ -34,6 +34,7 @@ header img {
 header h1 {
     font-size: 30px;
     text-align: left;
+    width: 200px;
 }
 
 /* Data collection form */
@@ -145,7 +146,6 @@ input[type=submit] {
     height: 23px;
     width: 23px;
     text-align: center;
- 
 }
 
 /* main area */
@@ -157,7 +157,7 @@ input[type=submit] {
 
 .testimonial {
     width: 90%;
-    margin: 2.5rem auto 0;
+    margin: 2rem auto 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,31 +178,19 @@ input[type=submit] {
     border-radius: 0.5rem;
     padding: 0.5rem 0.5rem;
     background-color: rgb(255, 255, 255);
-    position: absolute;
     color: rgb(0, 0, 0);
-    transform:translateY(-310px)
-}
-
-.test2 h2 {
-    transform:translateY(-280px)
-}
-
-.test3 h2 {
-    transform:translateY(-370px)
+    transform: translateY(-50px);
 }
 
 .testimonial p {
+    width: 90%;
+    margin: auto;
     font-weight: 400;
     font-size: 18px;
-    padding: 4rem 0 0;
     font-style: italic;
+    transform: translateY(-25px);
 }
 
-.test2 p {
-    padding: 3rem 0 0;
-}
-
-.testimonial p,
 .testimonial img {
     width: 90%;
     margin: 0.5rem auto 0.75rem;
@@ -218,6 +206,7 @@ input[type=submit] {
     background-color: rgb(0, 102, 255);
     padding: 0.5rem 1rem;
     width: 90%;
+    font-size: 20px;
     color: white;
     font-weight: 600;
     border: none;
@@ -251,6 +240,118 @@ footer {
 
 /* media queries */
 
+@media (min-width: 750px) {
+
+    header {
+        justify-content: left;
+        width: 90%;
+    }
+
+    header h1 {
+        width: 200px;
+    }
+
+    .testimonial {
+        margin: 0 auto;
+    }
+
+    .testimonial div {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .testimonial div img {
+        width: 45%;
+        margin: 1rem;
+    }
+
+    .testimonial h2 {
+        font-size: 40px;
+        margin: 1rem 1rem 0;
+        padding: 0.5rem 0.5rem;
+        transform: translateY(0);
+    }
+
+    .testimonial p {
+        font-size: 22px;
+        margin: 1rem;
+        padding: 0;
+        transform: translateY(0);
+    }
+
+    .main button {
+        font-size: 25px;
+        margin: 3rem auto;
+    }
+
+    .main button div svg{
+        font-size: 50px;
+    }
+
+    .form {
+        height: 800px;
+    }
+    
+    input[type=submit],
+    label {
+        font-size: 22px;
+    }
+
+    .refresh-btn {
+        bottom: 20px;
+        right: 20px;
+    }
+
+
+    .refresh-btn p {
+        font-size: 25px;
+    }
+
+    .refresh-btn svg {
+        height: 27px;
+        width: 27px;
+    }
+
+}
+
+@media (min-width: 1150px) {
+
+    header {
+        width: 1050px;
+    }
+
+    .main {
+        width: 1225px;
+        margin: 7rem auto 0;
+    }
+
+    .form {
+        height: 800px;
+        width: 1100px;
+        background-position: top;
+    }
+
+    .form h3 {
+        width: 50%;
+        font-size: 50px;
+        margin-bottom: 2rem;
+    }
+
+    input[type=submit],
+    label {
+        width: 50%;
+    }
+
+    #question6 label,
+    #question6 input[type=text],
+    #question6 input[type=number],
+    #question6 input[type=email],
+    #question4 input[type=text] {
+        width: 50%;
+    }
+}
+
 @media (max-width: 380px) {
 
     header img {
@@ -268,6 +369,10 @@ footer {
 }
 
 @media (max-width: 320px) {
+
+    header {
+        margin: 0.5rem auto;
+    }
 
     header img {
         width: 50px;
